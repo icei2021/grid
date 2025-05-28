@@ -151,11 +151,40 @@
 #park-image{
     grid-row: 1 / 2;
     grid-column: 3 / 4;
+   /*  transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; */
+
+    transition: transform 1s ease;
 }
 
-#park-image img, #garden-image img{
-    transform: rotate(2deg);
+#park-image:hover{
+    transform: skew(8deg);
 }
+
+
+#park-image img, #garden-image img, #restaurant-image img{
+    transform: rotate(2deg);
+    animation-name: borderRadiusImage;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+    animation-fill-mode: forwards;
+
+    animation: borderRadiusImage 3s ease-in alternate 3 forwards;
+}
+
+@keyframes borderRadiusImage{
+    from{
+        border-radius: 0;
+    }
+    to{
+        border-radius: 50px;
+    }
+}
+
 
 #restaurant-content{
     grid-row: 2 / 3;
@@ -165,6 +194,7 @@
 #restaurant-image{
     grid-row: 2 / 3;
     grid-column: 1 / 2;
+    transform: skew(5deg);
 }
 
 #restaurant-image img{
@@ -218,11 +248,13 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    filter:sepia(100%);
 }
 
 .gallery-image:hover{
     transform: scale(1.1);
+    filter: blur(0);
 }
 
 .gallery-item{
