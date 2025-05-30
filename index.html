@@ -49,8 +49,19 @@
         <li class="navigation-list">
           <a href="">Nosotros</a>
         </li>
-        <li class="navigation-list">
+        <li class="navigation-list" id="special-services">
           <a href="">Servicios</a>
+          <ul class="submenu">
+            <li class="submenu-special">
+              <a href=""> Parque </a>
+            </li>
+            <li>
+              <a href=""> Restaurante </a>
+            </li>
+            <li>
+              <a href=""> jardín </a>
+            </li>
+          </ul>
         </li>
         <li class="navigation-list">
           <a href="">Galeria</a>
@@ -122,6 +133,9 @@
 
     <div class="gallery-grid">
       <div class="gallery-item">
+        <div class="layer">
+          <p class="layer-description">Animal-1</p>
+        </div>
         <img class="gallery-image" src="img/grid1.jpg" alt="" />
       </div>
       <div class="gallery-item">
@@ -135,6 +149,87 @@
       </div>
       <div class="gallery-item">
         <img class="gallery-image" src="img/grid5.jpg" alt="" />
+      </div>
+    </div>
+
+    <h2 class="contact-title">Contactos</h2>
+
+    <div class="container">
+      <div class="contact-box">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              id="name"
+              type="text"
+              class="form-input"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Correo</label>
+            <input
+              id="email"
+              type="text"
+              class="form-input"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="company" class="form-label">Compañia</label>
+            <input
+              id="company"
+              type="text"
+              class="form-input"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label for="details" class="form-label">Detalles</label>
+            <textarea class="form-input" id="details" name="" id=""></textarea>
+          </div>
+          <button class="form-submit">Enviar</button>
+        </form>
+        <div class="contact-right">
+          <div class="contact-service">
+            <i class="fa-solid fa-headset"></i>
+            <div class="contact-detail">
+              <h3 class="contact-subtitle">Llamadas</h3>
+              <p class="contact-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                cumque, voluptatum, asperiores, incidunt doloribus
+                exercitationem.
+              </p>
+              <p class="detail">+ (406) 555-0120</p>
+            </div>
+          </div>
+
+          <div class="contact-service">
+            <i class="fa-regular fa-envelope"></i>
+            <div class="contact-detail">
+              <h3 class="contact-subtitle">Correo</h3>
+              <p class="contact-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                cumque, voluptatum, asperiores, incidunt doloribus
+                exercitationem.
+              </p>
+              <p class="detail">+ (406) 555-0120</p>
+            </div>
+          </div>
+
+          <div class="contact-service">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="contact-detail">
+              <h3 class="contact-subtitle">Ubicación</h3>
+              <p class="contact-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                cumque, voluptatum, asperiores, incidunt doloribus
+                exercitationem.
+              </p>
+              <p class="detail">+ (406) 555-0120</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
